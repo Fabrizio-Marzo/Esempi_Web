@@ -540,7 +540,7 @@ width: 100%;
     background: var(--color-white);
     padding: 3rem;
     border-radius: 1rem;
-    width: 50%;
+    width: 50vw;
 }
 
 .customize-theme .font-size {
