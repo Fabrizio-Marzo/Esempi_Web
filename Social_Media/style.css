@@ -137,6 +137,7 @@ nav .create {
 .main .left {
     height: max-content;
     position: sticky;
+    z-index: 10;
     top: 5.4rem;
 }
 
@@ -531,7 +532,6 @@ width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 100;
     text-align: center;
     display: grid;
     place-items: center;
@@ -689,7 +689,6 @@ width: 100%;
 
     .main .left {
         width: 5rem;
-        z-index: 5;
     }
 
     .main .left .profile .handle{
