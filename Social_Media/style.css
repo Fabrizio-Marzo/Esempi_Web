@@ -128,6 +128,7 @@ nav .create {
     display: grid;
     grid-template-columns: 18vw auto 20vw;
     column-gap: 2rem;
+    align-items: start;
 }
 
 
@@ -428,6 +429,7 @@ width: 100%;
     position: sticky;
     top: -18rem;
     bottom: 0;
+    height: 100dvh;
 }
 
 .right .messages {
@@ -534,6 +536,7 @@ width: 100%;
     display: grid;
     place-items: center;
     font-size: 0.9rem;
+    display: none;
 }
 
 .customize-theme .card {
@@ -543,11 +546,14 @@ width: 100%;
     width: 50vw;
 }
 
+/* THEME COSTUMIZE  FONT SIZE  */
+
 .customize-theme .font-size {
     margin-top: 5rem;
 }
 
 .customize-theme .font-size > div {
+    margin-top: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -556,9 +562,117 @@ width: 100%;
     border-radius: var(--card-border-radius);
 }
 
+.customize-theme .choose-size {
+    background: var(--color-secondary);
+    height: 0.3rem;
+    width: 100%;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.customize-theme .choose-size span {
+    width: 1rem;
+    height: 1rem;
+    background: var(--color-secondary);
+    border-radius: 50%;
+    cursor: pointer;
+}
 
+.customize-theme .choose-size span.dynamic {
+ background: var(--color-primary);
+}
 
+/* THEME COSTUMIZE  COLOR  */
+
+.customize-theme .color {
+    margin-top: 2rem;
+}
+
+.customize-theme .choose-color {
+    margin-top: 1rem;
+    background: var(--color-light);
+    padding: var(--search-padding);
+    border-radius: var(--card-border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.customize-theme .choose-color span {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+}
+
+.customize-theme .choose-color span:nth-child(1){
+    background: hsl(252, 75% ,60%);
+}
+
+.customize-theme .choose-color span:nth-child(2){
+    background: hsl(52, 75% ,60%);
+}
+
+.customize-theme .choose-color span:nth-child(3){
+    background: hsl(352, 75% ,60%);
+}
+
+.customize-theme .choose-color span:nth-child(4){
+    background: hsl(152, 75% ,60%);
+}
+
+.customize-theme .choose-color span:nth-child(5){
+    background: hsl(202, 75% ,60%);
+}
+
+.customize-theme .choose-color span.dynamic {
+    border: 7px solid white;
+}
+
+/* THEME COSTUMIZE  BACKGROUND  */
+
+.customize-theme .background {
+    margin-top: 2rem;
+}
+
+.customize-theme .choose-bg {
+    display:  flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.customize-theme .choose-bg > div {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.customize-theme .choose-bg > div.dynamic {
+    border: 2px solid var(--color-primary);
+}
+
+.customize-theme .choose-bg .bg-1 {
+    background: white;
+    color: black;
+}
+
+.customize-theme .choose-bg .bg-2 {
+    background: hsl(252, 30%, 17%);
+    color: white;
+}
+
+.customize-theme .choose-bg .bg-3 {
+    background: hsl(252, 30%, 10%);
+    color: white;
+}
 /*             MEDIA QUERY     
             FOR SMALL LAPTOPS AND BIG TABLES          */
 
