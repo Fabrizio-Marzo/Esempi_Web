@@ -6,6 +6,10 @@ const messages = document.querySelector('.messages');
 const message = document.querySelectorAll('.message');
 const messageSearch = document.querySelector('#message-search');
 
+//THEME
+
+const theme = document.querySelector('#theme_customize');
+const themeModal = document.querySelector('.customize-theme');
 
 const changeActiveItem = () => {
     menuitems.forEach(item => {
@@ -60,3 +64,22 @@ const searchMessage = () => {
 
 // Search bar
 messageSearch.addEventListener('keyup',searchMessage);
+
+// Open the modal
+const openThemeModal = () => {
+    themeModal.style.display = 'grid';
+}
+
+const closeThemeModal = (e) => {
+    if(e.target.classList.contains('customize-theme')){
+        themeModal.style.display = 'none';
+    }
+}
+
+console.log(themeModal);
+
+// Close the Modal
+themeModal.addEventListener('click',closeThemeModal);
+
+// THEME CUSTOMIZE
+theme.addEventListener('click',openThemeModal);

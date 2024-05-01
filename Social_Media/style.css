@@ -544,6 +544,7 @@ width: 100%;
     padding: 3rem;
     border-radius: 1rem;
     width: 50vw;
+    box-shadow: 0 0 1rem var(--color-primary);
 }
 
 /* THEME COSTUMIZE  FONT SIZE  */
@@ -702,6 +703,10 @@ width: 100%;
     .sidebar h3 {
         display: none;
     }
+
+    .customize-theme .card {
+        width: 80vw;
+    }
 }
 
 /* MEDIA QUERIES FOR SMALL TABLETS AND MOBILE PHONES*/
@@ -746,6 +751,10 @@ width: 100%;
         top: 1.3rem;
         left: calc(20rem - 0.6rem);
         display: block;
+    }
+
+    .customize-theme .card {
+        width: 92vw;
     }
 }
 
